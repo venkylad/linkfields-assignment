@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import "antd/dist/antd.css";
 
+// global store
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))

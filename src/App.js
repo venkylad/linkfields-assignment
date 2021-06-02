@@ -8,8 +8,9 @@ import DetailPage from "./components/DetailPage";
 const App = () => {
   return (
     <>
-      <Layout>
+      <Layout style={{ padding: "20px 0 20px 0" }}>
         <Content>
+          {/* routes for pokemons */}
           <Switch>
             <Route exact path="/">
               <CardContainer />

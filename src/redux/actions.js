@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// action creator for fetching all pokemons
 export const fetchPokemons = (url) => async (dispatch) => {
   try {
     const { data } = await axios.get(url);
@@ -9,6 +10,7 @@ export const fetchPokemons = (url) => async (dispatch) => {
   }
 };
 
+// action creator for fetching single pokemon type
 export const singlePokemon = (url) => async (dispatch) => {
   try {
     const { data } = await axios.get(url);

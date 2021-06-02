@@ -9,7 +9,8 @@ const PokemonCard = ({ name, url }) => {
     border: "1px solid grey",
     width: "250px",
     height: "120px",
-    textAlign: "center"
+    textAlign: "center",
+    borderRadius: "10px"
   };
 
   return (
@@ -21,7 +22,7 @@ const PokemonCard = ({ name, url }) => {
       >
         <Link to={`/${name}`}>
           <Card style={style}>
-            <h2>{name}</h2>
+            <h2>{name.toUpperCase()}</h2>
           </Card>
         </Link>
       </Col>
